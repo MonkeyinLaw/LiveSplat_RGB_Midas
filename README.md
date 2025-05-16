@@ -39,6 +39,15 @@ Note that the application is not open source, and is covered by this [license](h
 **Windows:**  
 `pip install https://livesplat.s3.us-east-2.amazonaws.com/livesplat-0.1.0-cp312-cp312-win_amd64.whl`
 
+Runpod
+----------
+`!wget https://livesplat.s3.us-east-2.amazonaws.com/livesplat-0.1.0-cp312-cp312-manylinux_x86_64.whl`
+Then rename to 
+`livesplat-0.1.0-cp312-cp312-manylinux_2_35_x86_64.whl`
+Run 
+`pip install /workspace/livesplat-0.1.0-cp312-cp312-manylinux_2_35_x86_64.whl
+pip install pyrealsense2-beta`
+
 Running
 ------
 To run LiveSplat, you will have to create an integration script that feeds your RGBD streams to the LiveSplat viewer. This repo provides an integration script for Intel Realsense devices called [livesplat_realsense.py](https://github.com/axbycc/LiveSplat/blob/main/livesplat_realsense.py).
